@@ -1,0 +1,27 @@
+<%-include("partials/header") %>
+<section>
+    <section>
+  <div>
+    <form class="form" action="/add" method="POST" enctype="multipart/form-data">
+      
+      <label for="title">TOPIC</label>
+      <input type="text" id="title" name="topic" placeholder="Enter topic(max 25 characters)" required>
+      
+      <label for="the-description">DESCRIPTION</label>
+      <textarea id="the-description" name="description" placeholder="Enter short description(max 149 characters)" required></textarea>
+      
+      <label for="the-text">INFO TEXT</label>
+      <textarea id="the-text" name="text" placeholder="Enter blog Information text" required></textarea>
+      
+      <input type="file" name="image">
+      <button class="blogForm-button" type="submit">Add Blog</button>
+    </form>
+  </div>
+</section>
+
+    
+
+</section>
+
+
+<%- include("partials/footer") %>

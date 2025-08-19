@@ -1,0 +1,35 @@
+<%-include("partials/header") %>
+
+<div class="hero-section">
+    <div class="hero-content">
+        <h1>WELCOME TO THE <br>AMEBO BLOG</h1>
+        <h2>Where Information <br>Meets Your Curiosity</h2>
+    </div> 
+    <div class="hero-img-container">
+        <img src="images/celebrity3.jpg" alt="hero-image">
+    </div>
+</div>
+<section>
+    <div class="section-2">
+        <h2 class="sh2">Trending Topics</h2>
+        <% for (let i = 0; i < blogItems.length; i ++) {%>
+            <div class="blog-items">
+                    <div class="blog-item" class="the-blog">
+                        <h2 class="Topic-h1"><%=blogItems[i].topic%></h2>
+                    
+                        <p><%=blogItems[i].description  %></p>
+                        <a href="/blog/<%= i %>">click to continue reading...</a>
+                        
+                    </div>
+                    <div class="blog-item-img">
+                        <img src="<%=blogItems[i].image%>" alt="an image">
+                    </div>  
+            </div>
+        <% } %>
+    
+    </div>
+</section>
+
+    
+
+<%- include("partials/footer") %>
