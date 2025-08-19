@@ -1,11 +1,12 @@
 {
   "name": "4.3-partials",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple blog web application built as a capstone project in Angela Yu’s Web Development Bootcamp.",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,14 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "multer": "^2.0.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rickyepuche/Blog-Website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rickyepuche/Blog-Website/issues"
+  },
+  "homepage": "https://github.com/Rickyepuche/Blog-Website#readme"
 }

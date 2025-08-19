@@ -13,7 +13,7 @@ const storage = multer.diskStorage({
         cb(null, Date.now() + "-" + file.originalname);
     }
 });
-const port = 3000;
+const port = process.env.port || 3000;
 
 const upload = multer({storage: storage});
 
