@@ -20,7 +20,11 @@ const upload = multer({storage: storage});
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-let blogPosts = [];
+let blogPosts = [{
+    topic: "small daily habits can lead to big lifestyle changes",
+    description: "Discover how small daily habits can lead to big lifestyle changes over time. A personal story about discipline, growth, and persistence.",
+    text: "When I first decided to change my daily routine, I didn’t think small actions would matter much. I believed success only came from huge breakthroughs. But I quickly learned that tiny, consistent steps are far more powerful.     My journey started with something as simple as drinking more water each morning. It felt insignificant, but over weeks, I noticed I had more energy. That small success gave me motivation to add another habit—reading ten minutes before bed. Soon, I was reading books I had ignored for years.     The beauty of small habits is that they stack. One leads to another, and slowly your life begins to transform without you even realizing it. Looking back after six months, I was healthier, calmer, and more focused than ever before.     The biggest lesson I learned is this: don’t underestimate small beginnings. Great change is rarely sudden—it’s the result of quiet persistence."
+}];
 
 
 app.get("/", (req, res) => {
